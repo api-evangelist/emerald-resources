@@ -1,0 +1,54 @@
+generated: '2026-10-21'
+method: searched
+source: https://www.emeraldresources.com.au/privacy-policy/
+discovered_via: https://emeraldresources.com.au/
+note: >-
+  Emerald Resources NL is an ASX-listed gold producer with operations in Cambodia and Australia. It is not an API
+  provider. The only privacy or legal text on its site is a short website Privacy Policy, linked from the site footer
+  and framed under the Australian Privacy Act 1988 (Cth). The Corporate Governance page links board and committee
+  charters and policies, including a Cyber Security Committee Charter, but none of them covers data-subject rights,
+  subprocessors, AI, accessibility or transparency reporting. No trust centre, DPA, subprocessor list, AI statement or
+  accessibility statement was found.
+signals:
+  data_subject_request:
+    url: https://www.emeraldresources.com.au/privacy-policy/
+    section: Access To Personal Information
+    rights_named: [access, correction]
+    evidence:
+    - source: https://www.emeraldresources.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        You can request access to any personal information that we hold about you at any time. This is subject to
+        some exceptions allowed by law. If it is determined that information is inaccurate, incomplete or out-of-date
+        then we will take all reasonable steps to bring the information up to date.
+    note: >-
+      The policy states a right of access and a right of correction, subject to legal exceptions. It names no
+      channel, timeline or identity-verification step. It only says "please contact us" under Contacting Us.
+  data_retention:
+    url: https://www.emeraldresources.com.au/privacy-policy/
+    section: Storage and Security of Your Personal Information
+    evidence:
+    - source: https://www.emeraldresources.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        We will also take all reasonable steps to destroy or de-identify personal information that we no longer need
+        for any purpose for which the information may be used or disclosed.
+    note: >-
+      A purpose-limited retention principle (destroy or de-identify once no longer needed). No retention periods or
+      schedule are given.
+  subprocessors:
+    url: https://www.emeraldresources.com.au/privacy-policy/
+    section: Using and Disclosing Your Personal Information
+    posture: no-third-party-sharing-stated
+    evidence:
+    - source: https://www.emeraldresources.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Any personal information you give us is used solely for the purpose given and will not be shared, sold, or
+        given to any third parties, unless required or authorised under the exemptions set out in the Privacy Act.
+    note: >-
+      The policy denies sharing personal data with third parties, apart from Privacy Act exemptions. It publishes no
+      subprocessor list. This records the stated posture, not a list of processors.

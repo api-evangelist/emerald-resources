@@ -1,0 +1,9 @@
+generated: '2026-10-21'
+method: none
+note: No first-party SDKs or client libraries found. The company (ASX:EMR gold miner) publishes no API or developer documentation.
+checked:
+- url: https://registry.npmjs.org/emerald-resources
+  status: 404
+- url: https://pypi.org/pypi/emerald-resources/json
+  status: 404
+packages: []

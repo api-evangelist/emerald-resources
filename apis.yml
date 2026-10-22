@@ -1,23 +1,85 @@
 aid: emerald-resources
+
 name: Emerald Resources
-description: 'Emerald Resources is a company surfaced via the API Evangelist harvest backlog (source:
-  australia-apidays-2026) and added to the network as a stub for full-pipeline profiling.'
+
+description: Emerald Resources NL is an international gold exploration and mining company listed on the Australian
+  Securities Exchange (ASX:EMR), describing itself as a sustainable, multi-asset gold producer in the making. Its
+  website covers its Cambodia and Australia gold projects, exploration, mineral resources and reserves, sustainability
+  programs, and investor material such as ASX announcements, reports and presentations. The company publishes no
+  developer portal or public API documentation; its corporate site runs on WordPress.
+
 url: https://raw.githubusercontent.com/api-evangelist/emerald-resources/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Mining
+- Gold
+- Exploration
+- ASX Listed
+- Australia
+- Cambodia
+- Natural Resources
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.emeraldresources.com.au/wp-content/uploads/2023/07/logo.png
+
 common:
+- type: Hosts
+  url: hosts/emerald-resources-hosts.yml
+- type: Vendors
+  url: vendors/emerald-resources-vendors.yml
+- type: DomainSecurity
+  url: security/emerald-resources-domain-security.yml
 - type: Website
-  url: https://emeraldresources.com.au/
+  url: https://www.emeraldresources.com.au/
+- type: About
+  url: https://www.emeraldresources.com.au/about/about-emerald/
+- type: Contact
+  url: https://www.emeraldresources.com.au/contact/
+- type: Investors
+  url: https://www.emeraldresources.com.au/investors/
+- type: News
+  url: https://www.emeraldresources.com.au/investors/asx-announcements/
+- type: Careers
+  url: https://www.emeraldresources.com.au/work-with-us/join-our-team/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/emerald-resources-nl/
+- type: YouTube
+  url: https://www.youtube.com/@emeraldresources959
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Site names Emerald Resources NL (ASX:EMR), a gold miner; no developer portal, docs, pricing, terms or
+    privacy pages are linked from the site.
+  evidence:
+  - url: https://emeraldresources.com.au/
+    status: 200
+  - url: https://www.emeraldresources.com.au/about/about-emerald/
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

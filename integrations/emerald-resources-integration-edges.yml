@@ -1,0 +1,19 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/emerald-resources/integrations
+- https://n8n.io/integrations/emerald-resources/
+- https://composio.dev/toolkits/emerald-resources
+- https://monid.ai/tools/emerald-resources
+checked:
+- https://zapier.com/apps/emerald-resources/integrations
+- https://www.emeraldresources.com.au/
+- https://composio.dev/toolkits/emerald-resources
+- https://monid.ai/tools/emerald-resources
+- https://n8n.io/integrations/emerald-resources/
+summary: Emerald Resources is an ASX-listed gold exploration and mining company with no developer portal, API, or
+  app marketplace listing. No integration edges found. Zapier app page returned HTTP 404; homepage links scanned
+  for api/developer/docs/integration/partner hrefs found none.
+marketplace_apps: []
+edges: []
+templates: []
